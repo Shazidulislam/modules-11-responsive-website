@@ -105,8 +105,8 @@ header{
     color: var(--color-dark-1);
 }
 .banner__description{
-    font-size:1rem ;
-    font-weight: 600 ;
+    font-size: 1rem;
+    font-weight: 600;
     color:var(--color-dark-1) ;
     padding: 1rem 0;
 }
@@ -151,10 +151,119 @@ header{
 .price::before{
     content: "$";
 }
-
+.product-section{
+    margin: 4rem 0;
+}
+.product__title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--color-dark-1);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.product__heading{
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+.price{
+    font-size: 24px;
+    font-weight: 400;
+}
+.product__description{
+    width: 15vw;
+    font-size: 14px;
+    font-weight: 500;
+    color: #787885;
+}
+.product__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: .5rem;
+    box-shadow: .1rem .1rem 1rem #aaaaaa6e;
+    padding: 1rem;
+    border-radius: .5rem;
+}
 .product__container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+/* section is card sart here  */
+.learn__more{
+    color: #E02C6D;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: right;
+}
+.join__btn{
+    padding:15PX  24px;
+    border-radius: .8rem;
+    border: none;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+
+}
+.card__description{
+    color: #6C6C6C;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+.card__title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+/* footer style start here  */
+.footer-section{
+    background-color: #0A0826;
+    padding: 3rem 0;
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer__title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+.footer__description{
+    font-size: 14px;
+    font-weight: 500;
+    color: #D9DBE1;
+}
+.footer__sub-des{
+    font-size: 14px;
+    font-weight: 500;
+    color: #D9DBE1;
+}
+.footer__ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    font-size: 30px;
+}
+.footer__link{
+    color: #AAAAAA;
 }
 
 /* responsive web site style code start here  */
@@ -179,9 +288,18 @@ header{
     .brand__container{
         grid-template-columns: repeat(4,1fr);
     }
+    .product__container,.card-container{
+        grid-template-columns: repeat(1,1fr);
+    }
       
     .brand-section{
         margin: 0 1rem;
+    }
+    .product__description{
+        width: 90%;
+    }
+    footer{
+        margin: 0;
     }
   
 
