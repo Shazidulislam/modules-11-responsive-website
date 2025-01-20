@@ -1,0 +1,131 @@
+
+/* reseat start here  */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+:root{
+    --color-dark-1:#3A3A3A;
+    --color-dark-2:#18191F;
+ 
+
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: "poppins",serif;
+    background-color: #AAAAAA;
+}
+
+body{
+    background-color: #fff;
+    margin: auto;
+    width: 100rem;
+    max-width: 100%;
+    box-shadow: .1rem .1rem .1rem #4c4c4c,-.1rem 0rem .1rem #4c4c4c;
+}
+
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.btn{
+    background-color: #E02C6D;
+    padding:  10PX 24px;
+    border-radius: 2.9rem;
+    border: none;
+}
+img{
+    width: 100%;
+}
+  
+/* reseat end here  */
+/* nav style start here  */
+header{
+    margin: 0 5vw;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__title{
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--color-dark-1);
+}
+.nav__ul{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 2rem;
+    align-items: center;
+    gap: 4rem;
+}
+:hover.nav__ul{
+    border: .1px solid;
+    border-radius: 6rem;
+}
+.logo{
+    font-size: 2.5rem;
+}
+.nav__link{
+    color: var(--color-dark-1);
+    font-weight: 600;
+    font-size: 1rem;
+}
+/* nav style end here  */
+/* banner style start here  */
+.banner-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.banner__title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--color-dark-1);
+}
+.banner__description{
+    font-size:1rem ;
+    font-weight: 600 ;
+    color:var(--color-dark-1) ;
+}
+.button__banner{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.banner-img-1{
+    position:relative ;
+    top: 10vw;
+}
+.banner-img-2{
+    position: relative;
+    top: -16vw;
+    left: 1vw;
+    width: 90%;
+}
+
+/* banner style end here  */
+/* responsive web site style code start here  */
+@media screen and (max-width:600px) {
+
+    .banner-section{
+        display: flex;
+    }
+
+}
+/* responsive web site style code end here  */
+
+
+
+
