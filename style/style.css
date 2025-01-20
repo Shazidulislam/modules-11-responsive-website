@@ -46,6 +46,9 @@ body{
 img{
     width: 100%;
 }
+main{
+    margin: 1rem 6rem;
+}
   
 /* reseat end here  */
 /* nav style start here  */
@@ -87,6 +90,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 70vh;
+}
+.banner__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 
 }
 .banner__title{
@@ -98,6 +108,7 @@ header{
     font-size:1rem ;
     font-weight: 600 ;
     color:var(--color-dark-1) ;
+    padding: 1rem 0;
 }
 .button__banner{
     display: flex;
@@ -110,18 +121,69 @@ header{
 }
 .banner-img-2{
     position: relative;
-    top: -16vw;
+    top: -15vw;
     left: 1vw;
     width: 90%;
 }
 
 /* banner style end here  */
+/* brand section style code start here  */
+.brand-section{
+    margin: 1rem 6rem;
+}
+.brand__container{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    border-bottom: 2px solid #aaaaaaac;
+    border-top: 2px solid  #aaaaaaa4;
+}
+.brand__img{
+    size: .5rem;
+    align-self: center;
+    margin: 2rem 1rem;
+    justify-self: center;
+}
+/* brand section style code start here  */
+/* product style section is start here */
+.price::before{
+    content: "$";
+}
+
+.product__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
 /* responsive web site style code start here  */
 @media screen and (max-width:600px) {
 
-    .banner-section{
-        display: flex;
+    html{
+        font-size: 48.5%;
     }
+   
+    .nav-container,
+    .banner-section{
+        flex-direction: column;
+    }
+    .banner-img-2{
+        top: -35rem;
+        width: 90%;
+    }
+    .banner-section{
+        height: auto;
+    }
+   
+    .brand__container{
+        grid-template-columns: repeat(4,1fr);
+    }
+      
+    .brand-section{
+        margin: 0 1rem;
+    }
+  
 
 }
 /* responsive web site style code end here  */
